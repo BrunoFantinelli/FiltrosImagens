@@ -46,7 +46,15 @@ public class ListaCG {
         Limiarizacao limiar = new Limiarizacao();
         limiar.limiarizacao("C:\\Users\\CC10848869958\\Desktop", "sasuke", ".jpg");
                
+         
+        //Erosão e Dilatação
+        //Caminho, Nome da imagem, extensão, dimensão da matriz, opção de mascára, o que fazer
+        //Opções de mascária Op 1 = Cruz, Op 2 = Matriz 3x3, Op 3 = Horizontal, Op 4 = Vertical
+        //Opções do que fazer "Erosao" ou "Dilatacao"
+        ErosaoDilatacao erodil = new ErosaoDilatacao();
+        //erodil.img_toErosaoDilatacao("C:\\Users\\CC10848869958\\Desktop", "sasuke", ".jpg", 3, 2, "Erosao");
         
+        erodil.img_toErosaoDilatacao("C:\\Users\\CC10848869958\\Desktop", "sasuke", ".jpg", 3, 1, "Dilatacao");
     }   
 
 }
