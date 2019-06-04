@@ -34,9 +34,9 @@ public class SuavizacaoMediana {
 
                 for(int j = x-raio; j <= x+raio; j++){
                     for(int k = y-raio; k <= y+raio; k++){
+
                         if(k >= 0 && j >= 0 && j < img.getWidth() && k < img.getHeight()){
                             Color cor = new Color(img.getRGB(j, k));
-                            
                             somaR += cor.getRed();
                             somaG += cor.getGreen();
                             somaB += cor.getBlue();
